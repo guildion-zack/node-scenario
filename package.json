@@ -1,0 +1,47 @@
+{
+  "name": "node-scenario",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/node-scenario/index.js",
+  "scripts": {
+    "start": "ts-node -r tsconfig-paths/register -r dotenv/config src/index.ts",
+    "test": "ts-jest",
+    "postinstall": "typesync || :"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guildion-zack/node-scenario.git"
+  },
+  "author": "Zack <guildion.develop@gmail.com> (https://twitter.com/__I_OXO_I__)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guildion-zack/node-scenario/issues"
+  },
+  "homepage": "https://github.com/guildion-zack/node-scenario#readme",
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "roots": [
+      "<rootDir>/test"
+    ]
+  },
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "cli-progress": "^3.9.0",
+    "colors": "1.4.0",
+    "fs": "0.0.1-security",
+    "readline": "^1.3.0"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/cli-progress": "^3.9.1",
+    "@types/colors": "1.2.1",
+    "@types/jest": "^26.0.23",
+    "@types/node": "16.6.1",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.3",
+    "tsc-alias": "1.3.10",
+    "typescript": "^4.3.5",
+    "typesync": "^0.8.0"
+  }
+}

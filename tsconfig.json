@@ -1,0 +1,46 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "jsx": "react",
+    "allowJs": false,
+    "noEmit": false,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strictNullChecks": true,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noUnusedLocals": false,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "isolatedModules": false,
+    "lib": [
+      "dom",
+      "es2020",
+      "ESNext",
+    ],
+    "rootDir": ".",
+    "composite": true,
+    "outDir": "dist",
+    "baseUrl": "./",
+    "paths": {
+      "node-scenario/src/*": ["src/*"],
+    },
+  },
+  "exclude": [
+    "*/node_modules/*",
+    "jest.config.js",
+    "*.js",
+    "dist",
+  ]
+}
+  
