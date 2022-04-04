@@ -4,8 +4,9 @@
   "description": "",
   "main": "dist/node-scenario/index.js",
   "scripts": {
-    "start": "ts-node -r tsconfig-paths/register -r dotenv/config src/index.ts",
-    "test": "ts-jest",
+    "build": "tsc -p tsconfig.json && tsc-alias -p tsconfig.output.json",
+    "test": "jest",
+    "test:dev": "jest --watch",
     "postinstall": "typesync || :"
   },
   "repository": {
